@@ -252,7 +252,7 @@
     transition: all 0.5s;/*图片放大过程的时间*/
 }
 .picture-wall .image.img-bg{
-    transition: all 0.7s;/*图片放大过程的时间*/
+    transition: all 1s;/*图片放大过程的时间*/
 }
 .picture-wall .image:hover{
 	transform: scale(1.08);
