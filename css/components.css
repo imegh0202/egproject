@@ -310,7 +310,7 @@
 	padding-top: 250px;
 	padding-bottom: 280px;
 	
-	background-color: #ccc;
+	background-color:#ccc;
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -321,11 +321,18 @@
 	padding-bottom: 200px;
 	}
 }
+@media(min-width:1600px){
+	.jumbotron{
+	padding-top: 420px;
+	padding-bottom: 370px;
+	}
+}
 .jumbotron .jumbotron__content{
 	display: block;
 	margin: 0 auto;
 	max-width: 600px;
 	padding: 25px 20px;
+	background-color: rgba(0,0,0,0.02);
 	bottom: 0;
 	left: 0;
 }
@@ -372,7 +379,6 @@
 }
 .jumbotron .jumbotron__content .btn{
 	margin-top: 10px;
-	margin-left: 72%;
 	font-weight: bold;
 
 }
