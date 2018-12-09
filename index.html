@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hens-TW">
+<html lang="zh-hant-TW">
 <head>
 	<meta charset="UTF-8">
 	<title>LifeInUSA</title>
@@ -9,20 +9,30 @@
 	<!-- Initial -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/base.css">
+
 	<!-- vender -->
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" href="vendor/fancybox3/jquery.fancybox.css">
 	<link rel="stylesheet" href="vendor/OwlCarousel/owl.carousel.css">
-	<link rel="stylesheet" href="vendor/OwlCarousel/owl.theme.green.min.css">
-
 	<link rel="stylesheet" href="vendor/Animate/animate.css">
+	<!-- <link rel="stylesheet" href="css/img-hover.css"> -->
 	
 	<!-- My style -->
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/components.css">
 	<link rel="stylesheet" href="css/style-main.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130692516-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-130692516-1');
+	</script>
+
 
 </head>
 <body>
@@ -55,8 +65,7 @@
 					<span></span>
 				</a>
 			</div>
-		</div>
-		
+		</div>	
 	</header>
 	<!-- End header -->
 
@@ -99,44 +108,49 @@
 			<div class="picture-wall" style="background-color: transparent;">
 				<h2 class="big-word" style="background-color: transparent; margin-top: 20px; position: absolute;">Travel</h2>
 				<div class="row row-0">
-					<div class="col-2-3 col-md-1-1 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
-						<a href="images/travel/pictureA.png" data-fancybox="image" data-caption="Caption #2">
+					<div class="col-2-3 col-md-1-1 hover-mask wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+						<a href="images/travel/pictureA.png" data-fancybox="image-wall" data-caption="Dear">
 							<div class="image-container image-ratio-4-3">
 								<div class="image img-bg" style="background-image: url(images/travel/pictureA.png);"></div>
 							</div>
+							<div class="discription dis-bg">Dear</div>
 						</a>
 					</div>
 					<div class="col-1-3 col-md-1-1">
 						<div class="row row-0">
-							<div class="col-1-2 col-p-0">
-								<a href="images/travel/pictureB.png" data-fancybox="image" data-caption="Caption #2">
+							<div class="col-1-2 col-p-0 hover-mask">
+								<a href="images/travel/pictureB.png" data-fancybox="image-wall" data-caption="Road">
 									<div class="image-container image-ratio-1-1">
 										<div class="image pwall-1 wow flipInX" data-wow-duration="1.5s" data-wow-delay="1s" style="background-image: url(images/travel/pictureB.png);"></div>
 									</div>
+									<div class="discription">Road</div>
 								</a>
 							</div>
-							<div class="col-1-2 col-p-0">
-								<a href="images/travel/pictureC.png" data-fancybox="image" data-caption="Caption #3">
+							<div class="col-1-2 col-p-0 hover-mask">
+								<a href="images/travel/pictureC.png" data-fancybox="image-wall" data-caption="Tourist">
 									<div class="image-container image-ratio-1-1">
 										<div class="image pwall-2 wow flipInX" data-wow-duration="1.5s" data-wow-delay="1.3s" style="background-image: url(images/travel/pictureC.png);"></div>
 									</div>
+									<div class="discription">Tourist</div>
 								</a>
 							</div>	
 						</div>
 					</div>
 					<div class="col-1-3 col-md-1-1">
 						<div class="row row-0">
-							<div class="col-1-2 col-p-0">
-								<a href="images/travel/pictureD.png" data-fancybox="image" data-caption="Caption #4">
+							<div class="col-1-2 col-p-0 hover-mask">
+								<a href="images/travel/pictureD.png" data-fancybox="image-wall" data-caption="Mall">
 									<div class="image-container image-ratio-1-1">
 										<div class="image pwall-3 wow flipInX" data-wow-duration="1.5s" data-wow-delay="1.3s" style="background-image: url(images/travel/pictureD.png);"></div>
+										<div class="discription">Mall</div>
 									</div>
 								</a>
 							</div>
-							<div class="col-1-2 col-p-0">
-								<a href="images/travel/pictureE.png" data-fancybox="image" data-caption="Caption #5">
+							<div class="col-1-2 col-p-0 hover-mask">
+								<a href="images/travel/pictureE.png" data-fancybox="image-wall" data-caption="Landscape">
 									<div class="image-container image-ratio-1-1">
 										<div class="image pwall-4 wow flipInX" data-wow-duration="1.5s" data-wow-delay="1.6s" style="background-image: url(images/travel/pictureE.png);"></div>
+										<div class="discription">Landscape</div>
 									</div>
 								</a>
 							</div>	
@@ -144,17 +158,19 @@
 					</div>
 					<div class="col-1-3 col-md-1-1">
 						<div class="row row-0">
-							<div class="col-1-2 col-p-0">
-								<a href="images/travel/pictureF.png" data-fancybox="image" data-caption="Caption #6">
+							<div class="col-1-2 col-p-0 hover-mask">
+								<a href="images/travel/pictureF.png" data-fancybox="image-wall" data-caption="Veiw">
 									<div class="image-container image-ratio-1-1">
-										<div class="image pwall-5 wow flipInX" data-wow-duration="1.5s" data-wow-delay="1.6s" style="background-image: url(images/travel/pictureF.png);"></div>
+										<div class="image pwall-5 wow flipInX" data-wow-duration="1.5s" data-wow-delay="1.5s" style="background-image: url(images/travel/pictureF.png);"></div>
+										<div class="discription">Veiw</div>
 									</div>
 								</a>
 							</div>
-							<div class="col-1-2 col-p-0">
-								<a href="images/travel/pictureG.png" data-fancybox="image" data-caption="Caption #7">
+							<div class="col-1-2 col-p-0 hover-mask">
+								<a href="images/travel/pictureG.png" data-fancybox="image-wall" data-caption="Aquarium">
 									<div class="image-container image-ratio-1-1">
-										<div class="image pwall-6 wow flipInX" data-wow-duration="1.5s" data-wow-delay="1.9s" style="background-image: url(images/travel/pictureG.png);"></div>
+										<div class="image pwall-6 wow flipInX" data-wow-duration="1.5s" data-wow-delay="1.8s" style="background-image: url(images/travel/pictureG.png);"></div>
+										<div class="discription">Aquarium</div>
 									</div>
 								</a>		
 							</div>	
@@ -194,36 +210,36 @@
 							</div>
 						</div>
 					</div>
-					<div class="owl-carousel owl-theme u-mt-4  wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
-						<a class="list-item" href="#!">	
+					<div class="owl-carousel owl-theme u-mt-4 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+						<a class="list-item" href="images/school/schoolA.png" data-fancybox="image-school" data-caption="">	
 							<div class="school-block">
 								<div class="image-container image-ratio-4-3">
 									<div class="image" style="background-image: url(images/school/schoolA.png);"></div>
 								</div>
 							</div>	
 						</a>
-						<a class="list-item" href="#!">
+						<a class="list-item" href="images/school/schoolB.png" data-fancybox="image-school" data-caption="">
 							<div class="school-block">
 								<div class="image-container image-ratio-4-3">
 									<div class="image" style="background-image: url(images/school/schoolB.png);"></div>
 								</div>
 							</div>	
 						</a>
-						<a class="list-item" href="#!">
+						<a class="list-item" href="images/school/schoolC.png" data-fancybox="image-school" data-caption="">
 							<div class="school-block">
 								<div class="image-container image-ratio-4-3">
 									<div class="image" style="background-image: url(images/school/schoolC.png);"></div>
 								</div>
 							</div>	
 						</a>
-						<a class="list-item" href="#!">
+						<a class="list-item" href="images/school/schoolmain.png" data-fancybox="image-school" data-caption="">
 							<div class="school-block">
 								<div class="image-container image-ratio-4-3">
 									<div class="image" style="background-image: url(images/school/schoolmain.png); background-position: bottom;"></div>
 								</div>
 							</div>	
 						</a>
-						<a class="list-item" href="#!">	
+						<a class="list-item" href="images/school/schoolE.png" data-fancybox="image-school" data-caption="">	
 							<div class="school-block">
 								<div class="image-container image-ratio-4-3">
 									<div class="image" style="background-image: url(images/school/schoolE.png); background-position: bottom;"></div>
@@ -258,7 +274,7 @@
 									<div class="row">
 										<div class="col-1-4">
 											<div class="image-container image-ratio-4-3">
-												<div class="image demo w3-opacity w3-hover-opacity-off" style="background-image: url(images/home/homeA.jpg);cursor:pointer;" onclick="currentDiv(1)"></div>
+												<div class="image w3-opacity" style="background-image: url(images/home/homeA.jpg);cursor:pointer;" onclick="currentDiv(1)"></div>
 											</div>
 										</div>
 										<div class="col-1-4 u-pl-4">
@@ -333,7 +349,7 @@
 	$(window).scroll(function(){
 		scrolledPx = $(window).scrollTop();  //抓取滾動距離
 		console.log(scrolledPx);
-		if(scrolledPx >= 470){	 //條件
+		if(scrolledPx >= 50){	 //條件
 			$('.navbar').addClass('active');	
 			$('.navbar .nav .nav__link').addClass('light');	
 		}else{
@@ -361,27 +377,27 @@
 		currentClass:'active'
 	});
 
-	//fancybox
-	$('[data-fancybox="image"]').fancybox({
+	// fancybox3
+	$('[data-fancybox]').fancybox({
 		// Options will go here
 		loop: true,
-  		protect: true,
 		buttons: [
 			"zoom",
-			"thumbs",
 			"slideShow",
 			"fullScreen",
+			"thumbs",
 			"close"
 		],
-
 		infobar: false,
-		hideScrollbar: false,
+		hideScrollbar: false
 	});
+	
 	//owl-carousel
 	$('.owl-carousel').owlCarousel({
 	    loop:true,
 	    margin:7,
-
+	    navText: [],
+	    nav:true,
 	    responsive:{
 	        0:{
 	            items:1

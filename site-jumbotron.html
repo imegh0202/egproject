@@ -12,6 +12,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="vendor/OwlCarousel/owl.carousel.css">
+	<link rel="stylesheet" href="vendor/Animate/animate.css">
 
 
 	<!-- My style -->
@@ -44,13 +46,28 @@
 	<section class="main">
 
 		<!-- Start jumbotron -->
-		<div class="jumbotron" style="background-image: url(images/site-jumbotron/banner1.jpg);">
-			<div class="jumbotron__content" style="-webkit-user-select: none;">
-				<div class="mask-dark"></div>
-				<h3 class="jumbotron__title wow fadeInUp text-center" data-wow-duration="2s" data-wow-delay="1s">Grand Canyon National Park</h3>
-				<p class="jumbotron__para wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.3s">Sunset at Cape Royal Point, North Rim</p>
+		<div class="owl-carousel owl-theme">
+			<div class="jumbotron" style="background-image: url(images/site-jumbotron/banner1.jpg);">
+				<div class="jumbotron__content" style="-webkit-user-select: none;">
+					<div class="mask-dark"></div>
+					<h3 class="jumbotron__title text-center" data-wow-duration="2s" data-wow-delay="1s">Grand Canyon National Park</h3>
+					<p class="jumbotron__para" data-wow-duration="2s" data-wow-delay="1.3s">Sunset at Cape Royal Point, North Rim</p>
+				</div>
+			</div>
+			<div class="jumbotron" style="background-image: url(images/site-jumbotron/banner2.jpg);">
+				<div class="jumbotron__content" style="-webkit-user-select: none;">
+					<div class="mask-dark"></div>
+					<h3 class="jumbotron__title text-center" data-wow-duration="2s" data-wow-delay="1s">Grand Canyon National Park</h3>
+				</div>
+			</div>
+			<div class="jumbotron" style="background-image: url(images/site-jumbotron/banner3.jpg);">
+				<div class="jumbotron__content" style="-webkit-user-select: none;">
+					<div class="mask-dark"></div>
+					<h3 class="jumbotron__title text-center" data-wow-duration="2s" data-wow-delay="1s">Grand Canyon National Park</h3>
+				</div>
 			</div>
 		</div>
+		
 		<!-- End jumbotron -->
 		
 		<!-- Start about -->
@@ -78,12 +95,18 @@
 		</div>
 		<!-- End End -->
 
+		<!-- Start map -->
+		<div class="hero" style="padding-bottom: 0px;">
+			<div class="map-container">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11435761.137894526!2d-104.18702045514843!3d38.13748735212018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873312ae759b4d15%3A0x1f38a9bec9912029!2z5aSn5bO96LC35ZyL5a625YWs5ZyS!5e0!3m2!1szh-TW!2stw!4v1544322263060" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>	
+		<!-- End map -->
+
 	</section>
 
 	<!-- Start footer -->
-	<footer id="subscribe" class="footer bgc--grey" style="background-image: url(images/home/footer.jpg);">
-		<div class="mask-dark"></div>
-		
+	<footer class="footer bgc--grey">
 		<div class="copyright text-center color--white ">
 			<p>© Copyright 2018 All rights reserved | page photo by Wikipedia </p>
 		</div>
@@ -114,10 +137,14 @@
 		}
 	});
 
-	// $('#gotop').click(function(){
-	// 	$("html,body").animate({scrollTop:0},900);
-	// })
-
+	//owl-carousel
+	$('.owl-carousel').owlCarousel({
+	    loop:true,
+	    margin:1,
+	    navText: [],
+	    nav:true,
+	    items:1,
+   	});
 
 	//Wow
 	wow = new WOW({
